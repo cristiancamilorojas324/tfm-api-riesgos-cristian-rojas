@@ -20,6 +20,10 @@ def predict():
     else :
         return "FALSE: El paciente si tiene diabetes"
 
+@app.route('/test', methods=['GET'])
+def test():
+    return "api-rest OK"
+
 
 if __name__ == "__main__":
     app.run(port=8000, debug=True)
